@@ -8,7 +8,7 @@
 
 The above two items would have been connected with physical cables to a computer that was stored in a server room elsewhere in the building.
 
-![terminal](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/DEC_VT100_terminal_transparent.png/811px-DEC_VT100_terminal_transparent.png)
+![terminal](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/DEC_VT100_terminal_transparent.png/541px-DEC_VT100_terminal_transparent.png)
 
 This kind of work station  is called a [terminal](https://en.wikipedia.org/wiki/Computer_terminal).
 
