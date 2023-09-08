@@ -19,7 +19,7 @@ This kind of work station  is called a [terminal](https://en.wikipedia.org/wiki/
 Today when you sit down at your computer, you will run a program called a [terminal emulator](https://en.wikipedia.org/wiki/Terminal_emulator) that emulates such old-school terminal hardware.
 
 There are lots of terminal emulators, but you will probably use one of these:
-* [Windows Console](https://en.wikipedia.org/wiki/Windows_Console)
+* [Windows Terminal](https://en.wikipedia.org/wiki/Windows_Terminal)
 * [macOS Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS))
 * [PuTTY](https://en.wikipedia.org/wiki/PuTTY)
 
