@@ -41,10 +41,10 @@ If you are off campus, you will first need to install and run the [UAF VPN softw
 
 Once you have connected to our Linux server using ssh, you will interact with the server using a [command-line shell](https://en.wikipedia.org/wiki/Shell_(computing)#Command-line_shells). 
 
-The shell [provides you](https://en.wikipedia.org/wiki/Standard_streams#Standard_error_(stderr)) with
+The shell [provides](https://en.wikipedia.org/wiki/Standard_streams#Standard_error_(stderr))
 * you with a mechanism (the [standard input stream](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin))) to send commands to the computer's operating system
 * the operating system with two mechanisms (the [standard output stream](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)) and the [standard error stream](https://en.wikipedia.org/wiki/Standard_streams#Standard_error_(stderr))) to send information back to you
 
-The shell that we will be using in this class is [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+The shell that we will be using in this class is [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
 
 
