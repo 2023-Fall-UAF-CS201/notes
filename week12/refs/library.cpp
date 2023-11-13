@@ -1,60 +1,32 @@
 #include <iostream>
 #include <string>
 
-using std::cout;
-using std::endl;
-using std::string;
 
-class Library {
-
-private:
-  string name;
-  bool isCopy;
-
-public:
-  Library(string name) {
-    this->name = name;
-    this->isCopy = false;
-  }
-
-  Library(const Library& original) {
-    this->name = "Copy of " + original.name;
-    this->isCopy = true;
-    cout << "Making a copy" << endl;
-    cout << this->name << " " << this->isCopy << endl;
-  }
-
-  bool getIsCopy() const {
-    return this->isCopy;
-  }
-
-  string getName() const {
-    return this->name;
-  }
-};
-
-void expensiveVisit(Library library) {
-  // Do something that's really expensive
-  //  library.addNewBook("", "eautnhaeostnuh");
+Library::Library(string name) {
+  this->name = name;
+  this->isCopy = false;
 }
 
-void cheapVisit(Library& library) {
-  // This is not expensive
-  //  library.getNumBooks();
+Library::Library(const Library& original) {
+  this->name = "Copy of " + original.name;
+  this->isCopy = true;
+  cout << "Making a copy" << endl;
+  cout << this->name << " " << this->isCopy << endl;
 }
 
+bool Library::getIsCopy() const {
+  return this->isCopy;
+}
 
-int main() {
+string Library::getName() const {
+  return this->name;
+}
 
-  Library uafLibrary{"UAF Library"};
-
-  cout << "About to do expensive visit:" << endl;
-  expensiveVisit(uafLibrary); // This will cause the library to get copied
-  cout << "Done with expensive visit" << endl;
-  cout << endl;
-  cout << "About to do cheap visit:" << endl;
-  cheapVisit(uafLibrary);     // This doesn't create a copy
-  cout << "Done with cheap visit" << endl;
-  
-  return 0;
+std::ostream& operator<<(std::ostream& stream, const Library& library) {
+  stream << library.getName() << " is";
+  if (!library.getIsCopy()) {
+    stream << " not";
+  }
+  stream << " a copy";
+  return stream;
 }
