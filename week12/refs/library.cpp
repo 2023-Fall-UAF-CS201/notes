@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
+#include "library.h"
 
-
-Library::Library(string name) {
+Library::Library(std::string name) {
   this->name = name;
   this->isCopy = false;
 }
@@ -10,15 +10,15 @@ Library::Library(string name) {
 Library::Library(const Library& original) {
   this->name = "Copy of " + original.name;
   this->isCopy = true;
-  cout << "Making a copy" << endl;
-  cout << this->name << " " << this->isCopy << endl;
+  std::cout << "Making a copy" << std::endl;
+  std::cout << this->name << " " << this->isCopy << std::endl;
 }
 
 bool Library::getIsCopy() const {
   return this->isCopy;
 }
 
-string Library::getName() const {
+std::string Library::getName() const {
   return this->name;
 }
 

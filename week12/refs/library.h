@@ -9,7 +9,7 @@ private:
   bool isCopy;
 
 public:
-  Library(string name);
+  Library(std::string name);
 
   Library(const Library& original);
 
