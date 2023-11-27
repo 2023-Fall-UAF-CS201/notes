@@ -32,6 +32,23 @@ int main() {
   };
 
   cout << majors["Delma"] << endl;
+
+  majors["Edmond"] = "Wildlife Biology";
+  majors["Charlie"] = "Theatre";
+  
+  cout << majors.size() << endl;
+
+  // C++11 way of doing it
+  for (auto key_value_pair : majors) {
+    cout << key_value_pair.first << " "
+	 << key_value_pair.second << endl;
+  }
+
+  // New C++17 syntax
+  for (const auto& [key, value] : majors) {
+    cout << key << " " << value << endl;
+  }
+
   
   return 0;
 }
